@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "jayakrishna-bucket"
+    bucket = "my-jk-test-bucket"
     key    = "jk"
     region = "us-east-1"
   }
