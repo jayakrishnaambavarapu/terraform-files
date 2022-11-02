@@ -3,7 +3,7 @@ resource "aws_instance" "app" {
   instance_type = "t2.micro"
   subnet_id      = aws_subnet.private-subnet2.id
   associate_public_ip_address = false
-  key_name = "tf-pair"
+  key_name = "sample-key"
   vpc_security_group_ids = [aws_security_group.private-instance-sg.id]
   ebs_block_device {
     device_name = "/dev/sda1"
